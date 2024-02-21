@@ -16,7 +16,7 @@ class Feladatok():
         self.cs = ColorSensor(Port.S3)
         self.ts = TouchSensor(Port.S1)
         self.gs = GyroSensor(Port.S2)
-        self.us = UltrasonicsSensor(Port.S4)
+        self.us = UltrasonicSensor(Port.S4)
 
         self.robot = DriveBase(self.jm,self.bm,55,115) 
 
@@ -34,6 +34,23 @@ class Feladatok():
         self.robot.turn(fordul)
         self.robot.turn(-1*fordul)
 
+    def koszon(self):
+        self.ev3.light.on(Color.RED)
+        self.ev3.speaker.set_speech_options('en','f2',100,400)
+        self.ev3.speaker.set_volume(50)
+        self.ev3.speaker.say("Hi! Have nice day!")
+        self.ev3.light.off()
+        self.ev3.light.on(Color.GREEN)
+        self.ev3.speaker.play_file(SoundFile.BOING)
+
+    def elsofurdulas(self):
+        self.robot.straight(300)
+
+    def kettofordul(self):
+        self.robot.angle(360)
+    
+    def harmadikfordulas(self):
+        self.robot.turn_rate(360)
 
     def csipog(self):
         self.ev3.speaker.beep()

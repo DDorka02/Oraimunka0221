@@ -13,10 +13,14 @@ import Feladatok
 
 # Create your objects here.
 #ev3 = EV3Brick()
-oraiMunka = Feladat.Feladat()
-oraiMunka.elsoFeladat()
-oraiMunka.masodikFeladat()
-oraiMunka.harmadikFeladat()
+oraiMunka = Feladatok.Feladatok()
+#oraiMunka.elsoFeladat()
+#oraiMunka.masodikFeladat()
+#oraiMunka.harmadikFeladat()
+oraiMunka.koszon()
+oraiMunka.elsofurdulas()
+oraiMunka.kettofordul()
+oraiMunka.harmadikfordulas()
 
 
 # Write your program here.
