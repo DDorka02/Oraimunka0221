@@ -46,8 +46,8 @@ class Feladatok():
     def elsofurdulas(self):
         self.robot.straight(300)
 
-    def kettofordul(self):
-        self.robot.angle(360)
+    def kettofordulas(self):
+        self.bm.run_angle(20,360)
     
     def harmadikfordulas(self):
         self.robot.turn_rate(360)

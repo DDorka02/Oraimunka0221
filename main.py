@@ -17,10 +17,10 @@ oraiMunka = Feladatok.Feladatok()
 #oraiMunka.elsoFeladat()
 #oraiMunka.masodikFeladat()
 #oraiMunka.harmadikFeladat()
-oraiMunka.koszon()
-oraiMunka.elsofurdulas()
-oraiMunka.kettofordul()
-oraiMunka.harmadikfordulas()
+#oraiMunka.koszon()
+#oraiMunka.elsofurdulas()
+oraiMunka.kettofordulas()
+#oraiMunka.harmadikfordulas()
 
 
 # Write your program here.
